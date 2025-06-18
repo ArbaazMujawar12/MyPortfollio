@@ -165,43 +165,31 @@
 
     <!-- Contact Section -->
     <section id="contact" class="py-5">
-    <div class="container">
-        <h2 class="text-center section-title">Contact <span class="text-primary">Me</span></h2>
-        
-        <div class="contact-form">
-            <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-                <!-- Netlify Bot Field (hidden) -->
-                <div class="d-none">
-                    <label>Don't fill this out if you're human: <input name="bot-field" /></label>
-                </div>
-                
-                <div class="mb-3">
-                    <label for="full-name" class="form-label">Full Name</label>
-                    <input type="text" class="form-control" id="full-name" placeholder="Your Name" name="name" required>
-                </div>
-                
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="email" placeholder="me@example.com" name="email" required>
-                </div>
-                
-                <div class="d-none" data-netlify-recaptcha="true"></div>
-                
-                <button type="submit" class="btn btn-primary btn-lg w-100">Submit</button>
-            </form>
+        <div class="container">
+            <h2 class="text-center section-title">Contact <span class="text-primary">Me</span></h2>
             
-            <!-- Success Message (hidden by default) -->
-            <div id="form-success" class="alert alert-success mt-3 d-none">
-                Thank you! Your message has been sent successfully.
-            </div>
-            
-            <!-- Error Message (hidden by default) -->
-            <div id="form-error" class="alert alert-danger mt-3 d-none">
-                There was an error submitting your form. Please try again.
+            <div class="contact-form">
+                <form method="POST" name="sign-up" action="https://formspree.io/f/mjkropkv">
+                    <div class="mb-3">
+                        <label for="full-name" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="full-name" placeholder="Your Name" name="Full-name" required>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="email" placeholder="me@example.com" name="Email" required>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="5" name="Message" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-lg w-100">Submit</button>
+                </form>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <!-- Footer -->
     <footer class="py-4">
